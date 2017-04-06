@@ -79,7 +79,7 @@
 			-ms-animation: none !important;
 			animation: none !important;
 		}
-
+/*
 	a {
 		-moz-transition: border-color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out;
@@ -90,7 +90,7 @@
 		outline: 0;
 		text-decoration: none;
 	}
-
+*/
 		a:hover {
 			border-color: transparent;
 		}
