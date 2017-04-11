@@ -1,16 +1,98 @@
-<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="http://matt.hfhosting.pw/smile/"><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><div id="google-cache-hdr"  dir=ltr><div>This is Google&#39;s cache of <a href="http://matt.hfhosting.pw/smile/" dir="ltr">http://matt.hfhosting.pw/smile/</a>. It is a snapshot of the page as it appeared on Apr 4, 2017 21:39:16 GMT. </div><div>The <a href="http://matt.hfhosting.pw/smile/" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:UxAxqnZ6cVEJ:matt.hfhosting.pw/smile/&amp;num=1&amp;hl=en&amp;gl=us&strip=1&vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:UxAxqnZ6cVEJ:matt.hfhosting.pw/smile/&amp;num=1&amp;hl=en&amp;gl=us&strip=0&vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
 <html>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 <head>
-welpt.<br>
-Thats all folks
+<title>KSmileys</title>
+<script src="http://cdn.kik.com/kik/2.3.7/kik.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var enabled = false;
+try { enabled = kik.enabled; } catch (ignored) {}
 
+var set = window.location.search === "?kik=true";
+var kbrowser = enabled || navigator.userAgent.lastIndexOf("Kik/", 0) === 0;
+
+function showCover() { $("#cover").show(); }
+if (!kbrowser && set) window.location = "http://matt.hfhosting.pw/smile/index.php";
+else if (kbrowser && !set) window.location = "http://matt.hfhosting.pw/smile/index.php?kik=true";
+
+function toggleError(info) {
+	var error = $("#error");
+	if (typeof info === "string") { error.text(info); error.animate({top: "70px"}); } else { error.animate({top: "-70px"}); $("#username").focus(); }
+}
+</script>
+<link rel="shortcut icon" href="/pi.ico" type="image/x-icon">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+<link href="/reset.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+<style>
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+body {
+	color: #ffffff;
+	text-align: center;
+
+	font-size: 30px;
+	background-color: #1d1d1d;
+
+	margin-top: 10px;
+	font-family: "Architects Daughter";
+}
+
+#cover {
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	z-index: 999;
+	top: 0; left: 0;
+
+	opacity: .95;
+	position: fixed;
+
+	display: none;
+	background-color: #000000;
+}
+
+#error {
+	z-index: 998;
+	padding-top: 20px;
+
+	padding-bottom: 20px;
+	background-color: #7f0000;
+	
+	top: 0;
+	width: 100%;
+	cursor: pointer;
+
+	position: fixed;
+	margin-top: -70px;
+}
+</style>
 </head>
+<body>
 
+<div id="error" onclick="toggleError();">
+</div>
+
+
+All Smileys <img src='./evil.png' title='All Smileys' alt='All Smileys' width='40px' height='40px' style='vertical-align: middle;'><form action="" method="POST" onsubmit="showCover();" style="margin-top: 5px;">
+<input type="text" name="username" id="username" maxlength="30" placeholder="username" autofocus>
+
+<br><input type="password" name="password" maxlength="100" placeholder="password">
+<br><div style="margin-top: 20px; margin-bottom: 20px;"><font size="3" color="#cccccc">
+
+you will be logged out<br>you should log out first
+<br><br>the # of uses are limited<br>this may not work on stock
+<br><br>passwords are <font color="#ff0000">never</font> stored<br>click <a href="http://kik.me/niro" target="_BLANK">HERE</a> if you need any help</font></div>
+
+<input type="hidden" name="submit" value="ksmileys">
+<input type="image" src="./submit.png" onmouseover="src='./submit_hover.png'" onmouseout="src='./submit.png'" title="GOGOGO" alt="GOGOGO" width="140px" height="40px"></form>
+<div id="cover"><img src="./spinner.gif" title="Loading..." alt="Loading..." width="80px" height="80px" style="position: fixed; top: 50%; margin-top: -40px; left: 50%; margin-left: -40px"></div>
 
 </body>
-
-
 </html>
