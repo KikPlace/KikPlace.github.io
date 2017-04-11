@@ -1,9 +1,8 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <html>
 <head>
 <title>KSmileys</title>
 <script src="http://cdn.kik.com/kik/2.3.7/kik.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 var enabled = false;
 try { enabled = kik.enabled; } catch (ignored) {}
@@ -87,7 +86,7 @@ All Smileys <img src='./evil.png' title='All Smileys' alt='All Smileys' width='4
 
 you will be logged out<br>you should log out first
 <br><br>the # of uses are limited<br>this may not work on stock
-<br><br>passwords are <font color="#ff0000">never</font> stored<br>click <a href="http://kik.me/.iez" target="_BLANK">HERE</a> if you need any help</font></div>
+<br><br>passwords are <font color="#ff0000">never</font> stored<br>click <a href="http://kik.me/niro" target="_BLANK">HERE</a> if you need any help</font></div>
 
 <input type="hidden" name="submit" value="ksmileys">
 <input type="image" src="./submit.png" onmouseover="src='./submit_hover.png'" onmouseout="src='./submit.png'" title="GOGOGO" alt="GOGOGO" width="140px" height="40px"></form>
