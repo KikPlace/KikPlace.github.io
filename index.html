@@ -1,96 +1,23 @@
+<!DOCTYPE html>
 <html>
+
+	
 <head>
-<title>KSmileys</title>
-<script src="http://cdn.kik.com/kik/2.3.7/kik.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-var enabled = false;
-try { enabled = kik.enabled; } catch (ignored) {}
 
-var set = window.location.search === "?kik=true";
-var kbrowser = enabled || navigator.userAgent.lastIndexOf("Kik/", 0) === 0;
+	
+<title>Hmmmmm</title>
 
-function showCover() { $("#cover").show(); }
-if (!kbrowser && set) window.location = "http://matt.hfhosting.pw/smile/index.php";
-else if (kbrowser && !set) window.location = "http://matt.hfhosting.pw/smile/index.php?kik=true";
-
-function toggleError(info) {
-	var error = $("#error");
-	if (typeof info === "string") { error.text(info); error.animate({top: "70px"}); } else { error.animate({top: "-70px"}); $("#username").focus(); }
-}
-</script>
-<link rel="shortcut icon" href="/pi.ico" type="image/x-icon">
+	
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
 
-<link href="/reset.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-<style>
-a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-body {
-	color: #ffffff;
-	text-align: center;
-
-	font-size: 30px;
-	background-color: #1d1d1d;
-
-	margin-top: 10px;
-	font-family: "Architects Daughter";
-}
-
-#cover {
-	width: 100%;
-	height: 100%;
-
-	margin: 0;
-	z-index: 999;
-	top: 0; left: 0;
-
-	opacity: .95;
-	position: fixed;
-
-	display: none;
-	background-color: #000000;
-}
-
-#error {
-	z-index: 998;
-	padding-top: 20px;
-
-	padding-bottom: 20px;
-	background-color: #7f0000;
 	
-	top: 0;
-	width: 100%;
-	cursor: pointer;
-
-	position: fixed;
-	margin-top: -70px;
-}
-</style>
 </head>
+	
+	
 <body>
 
-<div id="error" onclick="toggleError();">
-</div>
-
-
-All Smileys <img src='evil.png' title='All Smileys' alt='All Smileys' width='40px' height='40px' style='vertical-align: middle;'><form action="" method="POST" onsubmit="showCover();" style="margin-top: 5px;">
-<input type="text" name="username" id="username" maxlength="30" placeholder="username" autofocus>
-
-<br><input type="password" name="password" maxlength="100" placeholder="password">
-<br><div style="margin-top: 20px; margin-bottom: 20px;"><font size="3" color="#cccccc">
-
-you will be logged out<br>you should log out first
-<br><br>the # of uses are limited<br>this may not work on stock
-<br><br>passwords are <font color="#ff0000">never</font> stored<br>click <a href="http://kik.me/niro" target="_BLANK">HERE</a> if you need any help</font></div>
-
-<input type="hidden" name="submit" value="ksmileys">
-<input type="image" src="./submit.png" onmouseover="src='./submit_hover.png'" onmouseout="src='./submit.png'" title="GOGOGO" alt="GOGOGO" width="140px" height="40px"></form>
-<div id="cover"><img src="./spinner.gif" title="Loading..." alt="Loading..." width="80px" height="80px" style="position: fixed; top: 50%; margin-top: -40px; left: 50%; margin-left: -40px"></div>
 
 </body>
+	
+	
 </html>
